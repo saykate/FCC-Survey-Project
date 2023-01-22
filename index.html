@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Tell us about your Dog</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Tell Us About Your Dog</h1>
+    <p id="description">Please answer these questions to let us know about your dog.</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Your Name <input id="name" type="text"  required  placeholder="Jane Smith" rows="1" cols="30"></label>
+          <label for="email" id="email-label">Email <input id="email" type="email" required placeholder="j.smith@email.com" rows="1", cols="30"></label>
+          <label for="dog-name">Your Dog's Name <input id="dog-name" type="text" required placeholder="Fido"></label>
+        </fieldset>
+        <fieldset>
+          <label>What Size is Your Dog?
+            <label for="small">
+            <input id="small" type="radio" name="dog-size" class="inline" value="1"> Small</label>
+            <label for="medium"><input id="medium" type="radio" name="dog-size" class="inline" value="2"> Medium</label>
+            <label for="large"><input id="large" type="radio" name="dog-size" class="inline" value="3"> Large</label>
+          <label for="number" id="number-label">How Old is Your Dog (Years): <input type="number" id="number" name="number" min="0" max="30" class="inline" placeholder="0"></label>
+          <label for="dropdown">Did You: <select id="dropdown" name="dropdown">
+          <option value="">Select One</option>
+          <option value="1">Adopt</option>
+          <option value="2">Shop</option>
+          <option value="3">Other</option>
+          </select>
+          </label>
+          <label for="cats" name="cats">I Also Like Cats: <input id="cats" type="checkbox" class="inline" value="yes"></label>
+          <label for="no-cats" name="no-cats">I Do not Like Cats: <input id="no-cats" type="checkbox" class="inline" value="no">
+
+          </label>
+        </fieldset>
+        <fieldset><label for="dog-picture">Upload a Picture of Your Dog:<input id="dog-picture" type="file" name="file"></label>
+        <label for="favorite">My Favorite thing to do with My Dog:
+          <textarea id="favorite" name="favorite" rows="4" cols="30" placeholder="I love hiking with my dog..."></textarea>
+        </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+      </form>
+  </body>
+</html>
